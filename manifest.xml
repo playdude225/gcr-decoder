@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
-  <Id>6b749831-2891-4b12-8876-000000000000</Id>
+<OfficeApp 
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:type="MailApp">
+  
+  <Id>6b749831-2891-4b12-8876-b0e65a0c0c01</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>GCR Decoder</ProviderName>
   <DefaultLocale>sk-SK</DefaultLocale>
   <DisplayName DefaultValue="GCR Decoder PRO" />
   <Description DefaultValue="Dekódovanie GCR správ priamo z mailu." />
-  <IconUrl DefaultValue="https://vas-server.com/icon.png" />
   
+  <IconUrl DefaultValue="https://res-1.cdn.office.net/assets/mail/pwa/v1/pngs/apple-touch-icon.png" />
+
   <Hosts>
     <Host Name="Mailbox" />
   </Hosts>
+
   <Requirements>
     <Sets>
       <Set Name="Mailbox" MinVersion="1.1" />
     </Sets>
   </Requirements>
-  
+
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
@@ -25,5 +31,11 @@
       </DesktopSettings>
     </Form>
   </FormSettings>
+
   <Permissions>ReadItem</Permissions>
+
+  <Rule xsi:type="RuleCollection" Mode="And">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+  </Rule>
+
 </OfficeApp>
