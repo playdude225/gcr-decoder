@@ -26,7 +26,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://playdude225.github.io/gcr-decoder/" />
+        <SourceLocation DefaultValue=https://playdude225.github.io/gcr-decoder//>
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
