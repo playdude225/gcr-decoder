@@ -20,7 +20,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://vas-server.com/taskpane.html" />
+        <SourceLocation DefaultValue="https://playdude225.github.io/gcr-decoder/" />
         <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
